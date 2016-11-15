@@ -250,6 +250,9 @@ module.exports = function(grunt) {
                     src: appConfig.js,
                     dest: '<%= appConfig.temp %>assets/app.js'
                 }]*/
+				files: {
+                    '<%= appConfig.dist %>assets/app.css': '<%= appConfig.app %>'+appConfig.css
+                }
             }
         }
 
